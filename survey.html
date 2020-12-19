@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id="title">Survery Form</h1>
+        <p id="description">Thank you for taking the time to help</p>
+        <form id="survey-form">
+            <label id="name-label">
+                Name
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <br>
+            <label id="email-label">
+                Email
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <br>
+            <label id="number-label">
+                Age (optional)
+                <input id="number" type="number" placeholder="Age" min="1" max="100">
+            </label>
+            <br><br>
+
+            <select id="dropdown">
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Leaner</option>
+                <option>Prefer not to say</option>
+            </select>
+            <br><br>
+
+            <label for="definitely">
+                <input id="definitely" type="radio" name="recommend-rating" value="definitely">Definitely
+            </label>
+            <br>
+            <label for="maybe">
+                <input id="maybe" type="radio" name="recommend-rating" value="maybe">Maybe
+            </label>
+            <br>
+            <label for="not-sure">
+                <input id="not-sure" type="radio" name="recommend-rating" value="not-sure">Not sure
+            </label>
+            <br><br>
+
+            <label for="front-end-projects">
+                <input id="front-end-projects" type="checkbox" name="improved-options" value="front-end-projects">Front-end Projects
+            </label>
+            <br>
+            <label for="back-end-projects">
+                <input id="back-end-projects" type="checkbox" name="improved-options" value="back-end-projects">Back-end Projects
+            </label>
+            <br>
+            <label for="data-visualization">
+                <input id="data-visualization" type="checkbox" name="improved-options" value="data-visualization">Data Visualization
+            </label>
+            <br><br>
+
+            <label for="comments">
+                <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+            </label>
+            <br>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
